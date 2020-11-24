@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  height: 100%;
+
+  background-color: rgba(55, 57, 61, 1);
+}
+
+.ruler {
+  width: 20vmin;
+  height: 80%;
+  border-top: 1vmin solid #68686868;
+  background-color: rgba(0, 0, 0, 0.2);
+}
