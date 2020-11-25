@@ -15,8 +15,23 @@ body {
 }
 
 .ruler {
-  width: 20vmin;
-  height: 80%;
-  border-top: 1vmin solid #68686868;
+  position: relative;
+  width: 10vmin;
+  height: 90%;
+  border-top: 2px solid #68686868;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* create long scale for ruler */
+.ruler::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: linear-gradient(to top, #5c5a5a 1px, transparent 2px);
+  background-size: 10% 10%;
 }
