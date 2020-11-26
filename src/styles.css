@@ -18,11 +18,11 @@ body {
   position: relative;
   width: 10vmin;
   height: 90%;
-  border-top: 2px solid #68686868;
+  border-top: 2px solid #5c5a5a;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* create long scale for ruler */
+/* long scale */
 .ruler::before {
   content: "";
 
@@ -33,5 +33,19 @@ body {
   bottom: 0;
 
   background: linear-gradient(to top, #5c5a5a 1px, transparent 2px);
-  background-size: 10% 10%;
+  background-size: 10% 20%;
+}
+
+/* short scale */
+.ruler::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 5vmin;
+  top: 0;
+  bottom: 0;
+
+  background: linear-gradient(to top, #5c5a5a 1px, transparent 1px);
+  background-size: 10% 2%;
 }
